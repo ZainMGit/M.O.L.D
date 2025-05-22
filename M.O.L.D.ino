@@ -46,6 +46,9 @@ void loop() {
   bool waterHigh = (digitalRead(FLOAT_SWITCH_PIN) == LOW);
 
   // Red LED ON if float switch is triggered
+
+  //If water is present, switch is closed and Arduino reads an input LOW
+
   if (waterHigh) {
     digitalWrite(RED_LED_PIN, LOW);
   } else {
