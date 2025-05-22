@@ -32,7 +32,7 @@ void setup() {
   lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print("Dehumidifier");
-  delay(1000);
+  delay(500);
 }
 
 void loop() {
@@ -45,7 +45,7 @@ void loop() {
   // Read float switch
   bool waterHigh = (digitalRead(FLOAT_SWITCH_PIN) == LOW);
 
-  // Red LED if float switch is triggered
+  // Red LED ON if float switch is triggered
   if (waterHigh) {
     digitalWrite(RED_LED_PIN, LOW);
   } else {
@@ -53,14 +53,14 @@ void loop() {
   }
 
   if (result == 0) {
-    // Display values on Serial Monitor
+    // Prints humidity and temperature to serial monitor
     Serial.print("Temp: ");
     Serial.print(temperature);
     Serial.print(" C\tHumidity: ");
     Serial.print(humidity);
     Serial.println(" %");
 
-    // Update LCD
+    // Updates LCD
     lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("Temp: ");
@@ -94,5 +94,5 @@ void loop() {
     lcd.print("Sensor Error!");
   }
 
-  delay(2000);
+  delay(500);
 }
