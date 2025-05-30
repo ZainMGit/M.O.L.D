@@ -9,8 +9,8 @@
 #define RED_LED_PIN 8
 
 // Humidity thresholds
-#define HUMID_HIGH 55
-#define HUMID_SAFE 54
+#define HUMID_HIGH 65
+#define HUMID_SAFE 64
 
 // Sensor and LCD objects
 DHT11 dht11(DHTPIN);
