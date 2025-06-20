@@ -1,3 +1,6 @@
+# M.O.L.D (Moisture Optimization and Level Detection)
+
+
 M.O.L.D is a simple Arduino-based dehumidifier controller. The project monitors room humidity and automatically activates a fan when the air is too damp. It also checks the water level in the collection tray and warns the user when it is full.
 
 ## Features
