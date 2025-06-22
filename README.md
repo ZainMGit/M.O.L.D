@@ -12,7 +12,7 @@ M.O.L.D is a simple Arduino-based dehumidifier controller. The project monitors 
 - **Circuit Design**: KiCad schematic and PCB files are provided in the `M.O.L.D Circuit Diagram (KiCad)` directory, along with a PDF export.
 
 ## Hardware Connections
-
+If using the Arduino Uno R4 microcontroller:  
 | Component        | Arduino Pin |
 |------------------|-------------|
 | DHT11            | D2          |
